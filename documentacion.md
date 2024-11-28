@@ -200,5 +200,5 @@ La combinación de estas estructuras de datos no solo mejora el rendimiento y la
 
 - Juan Ignacio Marcos Merlo
 
-- Santiago 
+- Santiago Logarzo
 
