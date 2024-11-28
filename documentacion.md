@@ -40,6 +40,14 @@
     - [Dijkstra](#dijkstra)
       - [Justificación:](#justificación-8)
       - [Funcionalidad:](#funcionalidad-8)
+- [Reflexión sobre lo que hicimos bien y lo que podemos mejorar](#reflexión-sobre-lo-que-hicimos-bien-y-lo-que-podemos-mejorar)
+  - [Lo que hicimos bien](#lo-que-hicimos-bien)
+    - [1. **Modelo de mapa con grafos**](#1-modelo-de-mapa-con-grafos)
+    - [2. **Recorrer el mapa con BFS**](#2-recorrer-el-mapa-con-bfs)
+    - [3. **Dijkstra (pendiente de implementación)**](#3-dijkstra-pendiente-de-implementación)
+  - [Lo que podemos mejorar](#lo-que-podemos-mejorar)
+    - [1. **Validaciones**](#1-validaciones)
+    - [2. **Agregar más mecánicas basadas en habilidades**](#2-agregar-más-mecánicas-basadas-en-habilidades)
   - [Conclusión](#conclusión)
   - [Integrantes](#integrantes)
 
@@ -188,11 +196,52 @@ El algoritmo de **Dijkstra** se sugiere para encontrar el camino más eficiente 
 
 ---
 
+
+# Reflexión sobre lo que hicimos bien y lo que podemos mejorar
+
+## Lo que hicimos bien
+
+### 1. **Modelo de mapa con grafos**
+- La elección de utilizar un **grafo no dirigido** para modelar el mapa del juego fue una decisión acertada.  
+- Nos permitió mantener las conexiones entre los planetas simples y claras, evitando complicaciones innecesarias.  
+- El mapa resultante es fluido, fácil de manejar y visualmente intuitivo.
+
+### 2. **Recorrer el mapa con BFS**
+- La implementación del algoritmo **BFS (Breadth-First Search)** fue un punto clave.  
+- Aseguramos que el jugador tuviera que visitar todos los planetas, haciendo el recorrido exhaustivo y entretenido.  
+- Este enfoque aportó un aspecto lógico y completo a la exploración del universo del juego.
+
+### 3. **Dijkstra (pendiente de implementación)**
+- Aunque aún no se implementó, la idea de agregar el algoritmo de **Dijkstra** para encontrar el camino óptimo entre planetas es una mejora estratégica.  
+- Esto optimizará los recursos del jugador (como el combustible) y agregará un nivel adicional de estrategia al juego.  
+- Es una mejora que potenciará la experiencia general del usuario.
+
+---
+
+## Lo que podemos mejorar
+
+### 1. **Validaciones**
+- En algunos casos, no realizamos suficientes **validaciones de errores** al agregar planetas o conexiones en el mapa.  
+- Implementar más chequeos podría haber prevenido posibles errores futuros y facilitado la depuración.  
+- Aunque no fue un problema crítico, reforzar este aspecto mejoraría la robustez del código.
+
+### 2. **Agregar más mecánicas basadas en habilidades**
+- Una mejora interesante hubiera sido implementar un sistema donde el jugador pudiera:  
+  - **Seleccionar una habilidad específica.**  
+  - Multiplicar su poder de habilidad por un valor asignado al personaje.  
+  - Usar el resultado para **reducir un porcentaje de vida del enemigo** durante el combate.  
+
+- Esto habría agregado más profundidad estratégica al juego, permitiendo a los jugadores elegir habilidades de manera táctica según el enemigo y las circunstancias.
+
+---
+
 ## Conclusión
 
 Este proyecto demuestra cómo las **estructuras de datos avanzadas** como **árboles binarios**, **colas de prioridad**, **listas enlazadas** y **grafos** pueden usarse para crear un juego eficiente y dinámico. Cada una de estas estructuras se seleccionó en función de su capacidad para gestionar diferentes aspectos del juego, como la organización de los personajes, la gestión de habilidades y transformaciones, la priorización de combates, y la navegación en el mapa.
+La combinación de estas estructuras de datos no solo mejora el rendimiento y la escalabilidad del juego, sino que también permite una jugabilidad fluida y flexible, ofreciendo una experiencia rica y optimizada para el jugador. Además, la implementación de algoritmos de búsqueda como **DFS** o **BFS** ayuda a garantizar que la exploración y el avance del juego se realicen de manera eficiente, mejorando la experiencia del usuario.
+En líneas generales, pensamos que nuestro trabajo fue bastante **asertivo** y bien ejecutado.  
+Aunque hubo algunas **fallas menores en el pulido del código**, el modelo y las mecánicas principales del juego funcionaron como esperábamos, ofreciendo una experiencia sólida y divertida para los jugadores.
 
-La combinación de estas estructuras de datos no solo mejora el rendimiento y la escalabilidad del juego, sino que también permite una jugabilidad fluida y flexible, ofreciendo una experiencia rica y optimizada para el jugador. Además, la implementación de algoritmos de búsqueda como **DFS**, **BFS**, y **Dijkstra** ayuda a garantizar que la exploración y el avance del juego se realicen de manera eficiente, mejorando la experiencia del usuario.
 
 ---
 
